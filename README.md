@@ -15,10 +15,6 @@ A modern and intuitive cryptocurrency portfolio management app built with Flutte
 - 📊 Transaction history
 - 🔒 Secure wallet management
 
-## Screenshots
-
-[Add screenshots here]
-
 ## Getting Started
 
 ### Prerequisites
@@ -89,10 +85,9 @@ lib/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0
 
 ## Acknowledgments
 
 - [Flutter](https://flutter.dev)
 - [Material Design](https://material.io)
-- [CoinGecko API](https://coingecko.com) for cryptocurrency data
