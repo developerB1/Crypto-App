@@ -7,6 +7,18 @@ import 'package:crypto_app/features/market/market_screen.dart';
 import 'package:crypto_app/features/wallet/wallet_screen.dart';
 import 'package:crypto_app/features/transactions/transactions_screen.dart';
 import 'package:crypto_app/features/settings/settings_screen.dart';
+import 'package:crypto_app/features/send/send_screen.dart';
+import 'package:crypto_app/features/receive/receive_screen.dart';
+import 'package:crypto_app/features/swap/swap_screen.dart';
+import 'package:crypto_app/features/qr_scan/qr_scan_screen.dart';
+import 'package:crypto_app/features/search/search_screen.dart';
+import 'package:crypto_app/features/asset_details/asset_details_screen.dart';
+import 'package:crypto_app/features/settings/language_settings_screen.dart';
+import 'package:crypto_app/features/settings/currency_settings_screen.dart';
+import 'package:crypto_app/features/settings/security_settings_screen.dart';
+import 'package:crypto_app/features/settings/help_center_screen.dart';
+import 'package:crypto_app/features/settings/terms_screen.dart';
+import 'package:crypto_app/features/settings/privacy_policy_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +37,22 @@ class CryptoApp extends ConsumerWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: themeMode,
-      home: const MainScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const MainScreen(),
+        '/send': (context) => const SendScreen(),
+        '/receive': (context) => const ReceiveScreen(),
+        '/swap': (context) => const SwapScreen(),
+        '/scan': (context) => const QRScanScreen(),
+        '/search': (context) => const SearchScreen(),
+        '/asset_details': (context) => const AssetDetailsScreen(),
+        '/settings/language': (context) => const LanguageSettingsScreen(),
+        '/settings/currency': (context) => const CurrencySettingsScreen(),
+        '/settings/security': (context) => const SecuritySettingsScreen(),
+        '/settings/help': (context) => const HelpCenterScreen(),
+        '/settings/terms': (context) => const TermsScreen(),
+        '/settings/privacy': (context) => const PrivacyPolicyScreen(),
+      },
     );
   }
 }

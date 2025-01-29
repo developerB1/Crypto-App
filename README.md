@@ -2,19 +2,6 @@
 
 A modern and intuitive cryptocurrency portfolio management app built with Flutter.
 
-## Features
-
-- 📊 Real-time cryptocurrency price tracking
-- 💼 Portfolio management and tracking
-- 📈 Interactive price charts and trends
-- 💰 Buy, sell, and transfer cryptocurrencies
-- 📱 Biometric authentication
-- 🌙 Dark/Light theme support
-- 📱 Responsive design
-- 🔔 Push notifications for price alerts
-- 📊 Transaction history
-- 🔒 Secure wallet management
-
 ## Getting Started
 
 ### Prerequisites

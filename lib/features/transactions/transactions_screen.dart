@@ -18,9 +18,10 @@ class TransactionsScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.file_download),
-        tooltip: 'Export Transactions',
+        heroTag: 'transactions_fab',
+        onPressed: () => Navigator.pushNamed(context, '/scan'),
+        tooltip: 'Scan QR Code',
+        child: const Icon(Icons.qr_code_scanner),
       ),
     );
   }

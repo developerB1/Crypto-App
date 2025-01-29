@@ -61,7 +61,7 @@ class _MarketHeader extends ConsumerWidget {
               ),
               IconButton(
                 icon: const Icon(Icons.search),
-                onPressed: () {},
+                onPressed: () => Navigator.pushNamed(context, '/search'),
               ),
             ],
           ),
@@ -221,12 +221,19 @@ class _CryptoList extends StatelessWidget {
         itemCount: cryptocurrencies.length,
         itemBuilder: (context, index) {
           final crypto = cryptocurrencies[index];
-          return _CryptoListItem(
-            symbol: crypto.symbol.toUpperCase(),
-            name: crypto.name,
-            price: crypto.currentPrice,
-            change: crypto.priceChangePercentage24h,
-            sparklineData: crypto.sparklineData,
+          return ListTile(
+            title: _CryptoListItem(
+              symbol: crypto.symbol.toUpperCase(),
+              name: crypto.name,
+              price: crypto.currentPrice,
+              change: crypto.priceChangePercentage24h,
+              sparklineData: crypto.sparklineData,
+            ),
+            onTap: () => Navigator.pushNamed(
+              context,
+              '/asset_details',
+              arguments: cryptocurrencies[index],
+            ),
           );
         },
       ),

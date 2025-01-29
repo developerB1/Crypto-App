@@ -17,6 +17,7 @@ class WalletScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        heroTag: 'wallet_fab',
         onPressed: () {},
         child: const Icon(Icons.qr_code_scanner),
       ),
@@ -83,17 +84,17 @@ class _WalletHeader extends StatelessWidget {
                     _WalletAction(
                       icon: Icons.arrow_upward,
                       label: 'Send',
-                      onTap: () {},
+                      onTap: () => Navigator.pushNamed(context, '/send'),
                     ),
                     _WalletAction(
                       icon: Icons.arrow_downward,
                       label: 'Receive',
-                      onTap: () {},
+                      onTap: () => Navigator.pushNamed(context, '/receive'),
                     ),
                     _WalletAction(
                       icon: Icons.swap_horiz,
                       label: 'Swap',
-                      onTap: () {},
+                      onTap: () => Navigator.pushNamed(context, '/swap'),
                     ),
                   ],
                 ),
