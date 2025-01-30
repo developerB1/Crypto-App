@@ -50,18 +50,6 @@ lib/
   └── main.dart       # Entry point
 ```
 
-## Dependencies
-
-- `flutter_riverpod`: State management
-- `fl_chart`: Charts and graphs
-- `dio`: HTTP client
-- `flutter_secure_storage`: Secure storage
-- `local_auth`: Biometric authentication
-- `google_fonts`: Custom fonts
-- `firebase_core`: Firebase integration
-- `firebase_auth`: Authentication
-- `cloud_firestore`: Cloud database
-
 ## Contributing
 
 1. Fork the repository
